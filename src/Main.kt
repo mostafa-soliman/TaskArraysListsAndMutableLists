@@ -76,5 +76,6 @@ fun main() {
 //Create a List:
 //1: Declare an immutable list of strings with the values ["apple", "banana", "cherry"].
 
+    val fruitImmutablesList : List<String> = listOf("apple", "banana", "cherry")
 
 }
