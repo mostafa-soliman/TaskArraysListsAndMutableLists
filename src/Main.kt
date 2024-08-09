@@ -64,4 +64,17 @@ fun main() {
     for((index, value) in arrayInt.withIndex()){
         println("The element at $index is $value")
     }
+// * Create an Array:
+// * 3: Reverse the array and print the reversed array.  
+
+    val reverseArrayInt :Array<Int> = arrayInt.reversedArray()
+    print("Print this reversed array: ")
+    reverseArrayInt.forEach { it ->
+        print(" $it, ")
+    }
+
+//Create a List:
+//1: Declare an immutable list of strings with the values ["apple", "banana", "cherry"].
+
+
 }
