@@ -87,4 +87,11 @@ fun main() {
     for(n in fruitImmutablesList.indices){
         println("print fruit ${fruitImmutablesList[n]}")
     }
+
+
+//     * Create a List:
+// * 3: Use the contains operator to check if the list contains the element "banana" and print the result.
+
+val fruitContainsBanana : Boolean = fruitImmutablesList.any { it == "banana" }
+    println("Does it have a banana menu? : $fruitContainsBanana")
 }
