@@ -72,10 +72,19 @@ fun main() {
     reverseArrayInt.forEach { it ->
         print(" $it, ")
     }
+    println()
 
 //Create a List:
 //1: Declare an immutable list of strings with the values ["apple", "banana", "cherry"].
 
     val fruitImmutablesList : List<String> = listOf("apple", "banana", "cherry")
 
+// * Create a List:
+// * 2: Use a loop to iterate through the list and print each value using indices.
+    for(n in fruitImmutablesList.iterator()){
+        println("print fruit $n")
+    }
+    for(n in fruitImmutablesList.indices){
+        println("print fruit ${fruitImmutablesList[n]}")
+    }
 }
