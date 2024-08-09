@@ -81,9 +81,7 @@ fun main() {
 
 // * Create a List:
 // * 2: Use a loop to iterate through the list and print each value using indices.
-    for(n in fruitImmutablesList.iterator()){
-        println("print fruit $n")
-    }
+
     for(n in fruitImmutablesList.indices){
         println("print fruit ${fruitImmutablesList[n]}")
     }
@@ -94,4 +92,11 @@ fun main() {
 
 val fruitContainsBanana : Boolean = fruitImmutablesList.any { it == "banana" }
     println("Does it have a banana menu? : $fruitContainsBanana")
+
+//     * Create a List:
+//    * 4: Convert the list to uppercase and print the modified list.
+    for(n in fruitImmutablesList.iterator()){
+        println("print fruit ${n.uppercase()}")
+    }
+
 }
