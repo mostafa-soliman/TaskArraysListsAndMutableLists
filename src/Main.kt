@@ -99,4 +99,9 @@ val fruitContainsBanana : Boolean = fruitImmutablesList.any { it == "banana" }
         println("print fruit ${n.uppercase()}")
     }
 
+//   * Create a Mutable List:
+//   * 1: Declare a mutable list of doubles with the values [1.1, 2.2, 3.3].
+
+    val numberMutableList : List<Double> = mutableListOf(1.1, 2.2, 3.3)
+
 }
