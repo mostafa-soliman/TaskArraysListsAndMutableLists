@@ -119,10 +119,27 @@ val fruitContainsBanana : Boolean = fruitImmutablesList.any { it == "banana" }
     numberMutableList.forEach { it ->
         print(" $it, ")
     }
+    println()
 
 //     * Create a Mutable List:
 //     * 5: Sort the mutable list in ascending order and print the sorted list.
     numberMutableList.sort()
+    println("list Is Sorted")
+    numberMutableList.forEach { it ->
+        print(" $it, ")
+    }
+    println()
+
+//  * Use Operators and Loops:
+//  * 1: Use the map operator to create a new list from the array where each value is multiplied by 2. Print the new list.
+
+    val arrayOpr : Array<Int> = arrayOf(1, 2, 3, 4, 5)
+
+    val newArray: List<Int> =arrayOpr.map { it * 2 }
+
+    for(n in newArray.iterator()){
+        print(" $n, ")
+    }
 
 
 }
