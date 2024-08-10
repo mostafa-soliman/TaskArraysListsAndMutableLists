@@ -102,6 +102,27 @@ val fruitContainsBanana : Boolean = fruitImmutablesList.any { it == "banana" }
 //   * Create a Mutable List:
 //   * 1: Declare a mutable list of doubles with the values [1.1, 2.2, 3.3].
 
-    val numberMutableList : List<Double> = mutableListOf(1.1, 2.2, 3.3)
+    val numberMutableList : MutableList<Double> = mutableListOf(1.1, 2.2, 3.3)
+
+
+//     * Create a Mutable List:
+//     * 2: Add the value 4.4 to the mutable list.
+
+    numberMutableList.add(4.4)
+
+//     * Create a Mutable List:
+//     * 3: Remove the value 2.2 from the mutable list.
+    numberMutableList.remove(2.2)
+
+//     * Create a Mutable List:
+//     * 4: Use a loop to iterate through the mutable list and print each value with for each.
+    numberMutableList.forEach { it ->
+        print(" $it, ")
+    }
+
+//     * Create a Mutable List:
+//     * 5: Sort the mutable list in ascending order and print the sorted list.
+    numberMutableList.sort()
+
 
 }
